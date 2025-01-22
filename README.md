@@ -51,11 +51,13 @@ A simple React application that allows users to upload CSV files, convert them t
 ## Example CSV Format
 
 To test the application, you can use a CSV file with the following format:
+```csv
+name,age,city
+John,30,New York
+Jane,25,Los Angeles
+Bob,35,Chicago
 
-name,age,city\n
-John,30,New York\n
-Jane,25,Los Angeles\n
-Bob,35,Chicago\n
+```
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
