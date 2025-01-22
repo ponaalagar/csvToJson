@@ -1,0 +1,129 @@
+.csv-converter {
+  min-height: 100vh;
+  background-color: #e1f7d3;
+}
+
+.header {
+  background-color: white;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.dropzone.active {
+  border-color: #2196f3;
+  background-color: #f0f9ff;
+}
+
+.dropzone.error {
+  border-color: #ff4444;
+  background-color: #fff0f0;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropzone p {
+  margin: 0;
+  font-size: 18px;
+  color: #666;
+}
+
+.dropzone small {
+  color: #999;
+  font-size: 14px;
+}
+
+.error-message {
+  color: #ff4444;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff0f0;
+  border-radius: 4px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.action-button {
+  width: 442px;
+  height: 162px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ebee81;
+  cursor: pointer;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.2s ease;
+}
+
+.action-button:hover:not(.disabled) {
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.action-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.preview {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.preview h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.preview pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
